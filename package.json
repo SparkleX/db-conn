@@ -1,0 +1,23 @@
+{
+	"name": "db-conn",
+	"version": "0.0.1",
+	"description": "Database Abstract Layer",
+	"main": "dist/index.js",
+	"scripts": {
+		"all": "run-s build",
+		"prebuild": "npm run clean",
+		"build": "tsc",
+		"postbuild": "npm link",
+		"clean": "rimraf dist",
+		"test": "mocha -r ts-node/register test/**/*Test.ts",
+		"cover": "nyc --reporter=lcov --reporter=text-summary mocha -r ts-node/register test/**/*Test.ts"
+	},
+	"author": "Sun, Xufei",
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {
+		"rimraf": "^3.0.0",
+		"typescript": "^3.6.4",
+		"npm-run-all": "^4.1.5"
+	}
+}
