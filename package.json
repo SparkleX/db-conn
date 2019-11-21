@@ -7,7 +7,6 @@
 		"all": "run-s build",
 		"prebuild": "npm run clean",
 		"build": "tsc",
-		"postbuild": "npm link",
 		"clean": "rimraf dist",
 		"test": "mocha -r ts-node/register test/**/*Test.ts",
 		"cover": "nyc --reporter=lcov --reporter=text-summary mocha -r ts-node/register test/**/*Test.ts"
