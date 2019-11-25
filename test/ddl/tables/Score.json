@@ -1,0 +1,11 @@
+{
+	"$schema": "../../../schema/table.json",
+	"name":"Score",	
+	"description":"Score",
+	"columns": [
+		{
+			"name":"id",
+			"type":"number"
+		}
+	]
+}

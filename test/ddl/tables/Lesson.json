@@ -1,0 +1,11 @@
+{
+	"$schema": "../../../schema/table.json",
+	"name":"Lesson",	
+	"description":"Lesson",
+	"columns": [
+		{
+			"name":"id",
+			"type":"number"
+		}
+	]
+}
