@@ -1,3 +1,4 @@
-# Database Abstract Layer (alpha version)
+# Database Abstract Layer (Type Script)
+
 
 ---

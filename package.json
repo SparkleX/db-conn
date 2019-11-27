@@ -1,30 +1,30 @@
 {
 	"name": "db-conn",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Database Abstract Layer",
-	"main": "dist/index.js",
+	"main": "src/index.ts",
 	"scripts": {
 		"all": "run-s build cover",
-		"prebuild": "npm run clean",
+		"dev": "nodemon --exec \"npm run all\"",
 		"build": "tsc",
-		"clean": "rimraf dist",
 		"test": "mocha -r ts-node/register test/**/*Test.ts",
 		"cover": "nyc --reporter=lcov --reporter=text-summary mocha -r ts-node/register test/**/*Test.ts"
 	},
 	"author": "Sun, Xufei",
 	"license": "MIT",
-	"dependencies": {},
-	"devDependencies": {
-		"rimraf": "^3.0.0",
+	"dependencies": {
 		"typescript": "^3.6.4",
-		"npm-run-all": "^4.1.5",
+		"ts-node": "^8.4.1"
+	},
+	"devDependencies": {
 		"@types/chai": "^4.2.4",
 		"@types/mocha": "^5.2.7",
 		"@types/node": "^12.12.12",
 		"chai": "^4.2.0",
 		"mocha": "^6.2.2",
-		"nyc": "^14.1.1",
-		"ts-node": "^8.4.1"
+		"nodemon": "^2.0.1",
+		"npm-run-all": "^4.1.5",
+		"nyc": "^14.1.1"
 	},
 	"homepage": "https://github.com/SparkleX/db-conn"
 }
