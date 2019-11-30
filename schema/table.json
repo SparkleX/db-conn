@@ -3,8 +3,7 @@
 	"properties": {
         "$schema": {
             "type": "string"
-		},
-		
+		},		
         "name": {
 			"type": "string",
 			"minLength": 1,
@@ -15,9 +14,21 @@
 		},
 		"columns":{
 			"$ref": "#/definitions/columns"
-		}		
+		},
+		"primaryKey":{
+			"type":"array",
+			"items": {
+				"type":"string"
+			}
+		},	
+		"uniqueIndexes":{
+			"$ref": "#/definitions/indexes"
+		},
+		"nonUniqueIndexes":{
+			"$ref": "#/definitions/indexes"
+		}						
 	},
-	"additionalProperties": false,
+	"additionalProperties": true,
     "definitions": {
         "columns":{
 			"type": "array",
@@ -30,16 +41,28 @@
 			"type": "object",
 			"required": ["name", "type"],
 			"properties": {
-				"name": {"type": "string"},
+				"name": "string",
 				"type": {
 					"type": "string",
-					"enum": ["string", "number", "decimal", "datetime"]
+					"enum": ["guid","string", "number", "decimal", "datetime"]
 				},
 				"size": {
 					"type": "number"					
-				}
+				},
+				"description": "string",
+				"nullable": "boolean"
 			},
 			"additionalProperties": false
-		}					
+		},
+        "indexes":{
+			"type": "object",
+			"minItems": 1,
+			"items": {
+				"type":"array",
+				"items": {
+					"type":"string"
+				}
+			}
+		}				
     }	
 }

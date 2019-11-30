@@ -8,6 +8,11 @@
 			"type":"number"
 		},
 		{
+			"name":"code",
+			"type":"string",
+			"size": 64
+		},		
+		{
 			"name":"name",
 			"type":"string",
 			"size": 64
@@ -16,5 +21,12 @@
 			"name":"examDate",
 			"type":"datetime"
 		}
-	]
+	],
+	"primaryKey": ["id"],
+	"uniqueIndexes":{
+		"CODE":["code"]
+	},
+	"nonUniqueIndexes":{
+		"CODE":["code"]
+	}
 }
