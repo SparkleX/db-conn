@@ -27,6 +27,6 @@
 		"CODE":["code"]
 	},
 	"nonUniqueIndexes":{
-		"CODE":["code"]
+		"NAME":["name"]
 	}
 }
