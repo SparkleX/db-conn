@@ -1,6 +1,6 @@
 {
 	"name": "db-conn",
-	"version": "0.0.6",
+	"version": "0.1.0",
 	"description": "Database Abstract Layer",
 	"main": "dist/index.js",
 	"scripts": {
@@ -12,13 +12,7 @@
 	"license": "MIT",
 	"dependencies": {},
 	"devDependencies": {
-		"@types/jest": "^24.0.23",
 		"@types/node": "^12.12.12",
-		"jest": "^24.9.0",
-		"jest-cli": "^24.9.0",
-		"npm-run-all": "^4.1.5",
-		"ts-jest": "^24.2.0",
-		"ts-node": "^8.4.1",
 		"typescript": "^3.6.4"
 	},
 	"homepage": "https://github.com/SparkleX/db-conn"
