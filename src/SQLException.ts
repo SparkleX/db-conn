@@ -1,4 +1,4 @@
-export class SqlError extends Error{
+export class SQLException extends Error{
 	message: string;
 	public constructor(message: string) {
 		super(message);

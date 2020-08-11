@@ -4,15 +4,23 @@
 	"description": "Database Abstract Layer",
 	"main": "dist/index.js",
 	"scripts": {
-		"all": "run-s build test",
+		"prebuild": "npm run clean",
 		"build": "tsc",
-		"test": "jest --coverage"
+		"clean": "rimraf dist",
+		"test": "jest"
 	},
 	"author": "Sun, Xufei",
 	"license": "MIT",
-	"dependencies": {},
+	"dependencies": {
+		"generic-pool": "^3.7.1"
+	},
 	"devDependencies": {
+		"@types/generic-pool": "^3.1.9",
+		"@types/jest": "^26.0.9",
 		"@types/node": "^12.12.12",
+		"jest": "^26.3.0",
+		"rimraf": "^3.0.2",
+		"ts-jest": "^26.1.4",
 		"typescript": "^3.6.4"
 	},
 	"homepage": "https://github.com/SparkleX/db-conn"

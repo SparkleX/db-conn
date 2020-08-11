@@ -12,7 +12,7 @@
 		"experimentalDecorators": true
     },
     "include": [
-		  "src/**/*"
+		  "src/**/*", "jest.config.js"
     ],
     "exclude": [
         "node_modules",
