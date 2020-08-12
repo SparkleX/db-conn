@@ -1,7 +1,7 @@
 {
 	"name": "db-conn",
-	"version": "0.1.0",
-	"description": "Database Abstract Layer",
+	"version": "0.1.1",
+	"description": "JDBC (JavaScript Database Connectivity)",
 	"main": "dist/index.js",
 	"scripts": {
 		"prebuild": "npm run clean",
@@ -23,5 +23,6 @@
 		"ts-jest": "^26.1.4",
 		"typescript": "^3.6.4"
 	},
+	"keywords": ["jdbc","database","pool"],
 	"homepage": "https://github.com/SparkleX/db-conn"
 }
