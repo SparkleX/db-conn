@@ -8,4 +8,8 @@ JavaScript Database Connectivity
 
 ---
 
+# History
+1) Generic pool is move to project [db-conn-pool](https://www.npmjs.com/package/db-conn-pool)
+1) HANA support [db-conn-hdb](https://www.npmjs.com/package/db-conn-hdb)
+1) MSSQL support [db-conn-mssql](https://www.npmjs.com/package/db-conn-mssql)
 
