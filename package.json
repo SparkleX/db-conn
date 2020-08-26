@@ -7,12 +7,11 @@
 		"prebuild": "npm run clean",
 		"build": "tsc",
 		"clean": "rimraf dist",
-		"test": "jest"
+		"test": ""
 	},
 	"author": "Sun, Xufei",
 	"license": "MIT",
-	"dependencies": {
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"@types/generic-pool": "^3.1.9",
 		"@types/jest": "^26.0.9",
@@ -22,6 +21,9 @@
 		"ts-jest": "^26.1.4",
 		"typescript": "^3.6.4"
 	},
-	"keywords": ["jdbc","database"],
+	"keywords": [
+		"jdbc",
+		"database"
+	],
 	"homepage": "https://github.com/SparkleX/db-conn"
 }
