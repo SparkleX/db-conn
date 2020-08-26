@@ -9,7 +9,9 @@ JavaScript Database Connectivity
 ---
 
 # History
+## Version 1.2.0
 1) Generic pool is move to project [db-conn-pool](https://www.npmjs.com/package/db-conn-pool)
-1) HANA support [db-conn-hdb](https://www.npmjs.com/package/db-conn-hdb)
-1) MSSQL support [db-conn-mssql](https://www.npmjs.com/package/db-conn-mssql)
+2) HANA support [db-conn-hdb](https://www.npmjs.com/package/db-conn-hdb)
+3) MSSQL support [db-conn-mssql](https://www.npmjs.com/package/db-conn-mssql)
+4) SQLException removed
 
