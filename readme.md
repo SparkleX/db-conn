@@ -15,3 +15,5 @@ JavaScript Database Connectivity
 3) MSSQL support [db-conn-mssql](https://www.npmjs.com/package/db-conn-mssql)
 4) SQLException removed
 
+## Version 1.3.0
+1) Column metadata support
